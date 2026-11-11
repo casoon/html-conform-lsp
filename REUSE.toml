@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2026 CASOON
+# SPDX-License-Identifier: MIT
+
+version = 1
+SPDX-PackageName = "html-conform-lsp"
+SPDX-PackageSupplier = "CASOON"
+SPDX-PackageDownloadLocation = "https://github.com/casoon/html-conform-lsp"
+
+[[annotations]]
+path = ["**"]
+SPDX-FileCopyrightText = "2026 CASOON"
+SPDX-License-Identifier = "MIT"

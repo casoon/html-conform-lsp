@@ -1,0 +1,26 @@
+# cargo-deny: `cargo deny check licenses` fails on any license not allowed below.
+# Each entry needs a reason.
+
+[licenses]
+version = 2
+confidence-threshold = 0.8
+allow = [
+    "MIT",          # the license of this crate and most dependencies
+    "Apache-2.0",   # the other half of the common "MIT OR Apache-2.0"
+    "BSD-3-Clause", # transitive dependencies of html-conform
+    "Unlicense",    # aho-corasick and memchr: "Unlicense OR MIT"
+    "Unicode-3.0",  # unicode-ident and the ICU crates ship Unicode's own data tables
+]
+
+[licenses.private]
+ignore = false
+
+[bans]
+multiple-versions = "warn"
+wildcards = "allow"
+highlight = "all"
+
+[sources]
+unknown-registry = "warn"
+unknown-git = "warn"
+allow-git = []

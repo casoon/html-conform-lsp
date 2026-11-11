@@ -1,0 +1,23 @@
+# SPDX-FileCopyrightText: 2026 CASOON
+# SPDX-License-Identifier: MIT
+
+[package]
+name = "html-conform-lsp"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88.0"
+description = "Language server for HTML conformance checking, built on html-conform"
+license = "MIT"
+repository = "https://github.com/casoon/html-conform-lsp"
+readme = "README.md"
+keywords = ["lsp", "html", "validator", "accessibility"]
+categories = ["development-tools", "web-programming"]
+publish = false
+
+[dependencies]
+a11y-report = "0.30"
+html-conform = "0.7"
+lsp-server = "0.10"
+lsp-types = "0.97"
+serde = "1"
+serde_json = "1"
